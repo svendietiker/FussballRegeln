@@ -1,89 +1,90 @@
 <section class="hero">
-	<div class="hero-overlay">
-		<p class="subtitle">Simpel aber verständlich</p>
+	<div class="overlay">
 
-		<h1>Die Welt des Fussballs</h1>
-
-		<p class="description">
-			Fussballregeln einfach erklärt: Lerne wichtige Regeln, verstehe Spielsituationen
-			und finde schnell heraus, was auf dem Platz wirklich gilt.
+		<p class="subtitle">
+			Simpel aber verständlich
 		</p>
 
-		<a class="button" href="/regeln">Regeln entdecken</a>
+		<h1>
+			Die Welt des Fussballs
+		</h1>
+
+		<p class="description">
+			Fussballregeln einfach erklärt: Lerne wichtige Regeln,
+			verstehe Spielsituationen und finde schnell heraus,
+			was auf dem Platz wirklich gilt.
+		</p>
+
+		<a href="/regeln" class="button">
+			Regeln entdecken
+		</a>
+
 	</div>
 </section>
 
 <style>
-	.hero {
-		min-height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: 40px;
+.hero{
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	padding-left:80px;
 
-		background:
-			linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
-			repeating-linear-gradient(
-				90deg,
-				#1f7a35 0px,
-				#1f7a35 120px,
-				#24913f 120px,
-				#24913f 240px
-			);
-	}
+	background-image:
+	linear-gradient(
+	rgba(0,0,0,0.45),
+	rgba(0,0,0,0.55)
+	),
+	url('/img/hintergrundhome.png');
 
-	.hero::before {
-		content: "";
-		position: absolute;
-		width: 420px;
-		height: 420px;
-		border: 5px solid rgba(255, 255, 255, 0.35);
-		border-radius: 50%;
-	}
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
 
-	.hero-overlay {
-		position: relative;
-		z-index: 1;
-		max-width: 850px;
-		padding: 60px;
-		border-radius: 24px;
-		background: rgba(0, 0, 0, 0.35);
-		backdrop-filter: blur(4px);
-	}
+/* dunkler Text-Container */
+.overlay{
+	max-width:700px;
+	background:rgba(0,0,0,0.35);
+	backdrop-filter: blur(5px);
+	padding:60px;
+	border-radius:24px;
+}
 
-	.subtitle {
-		color: #e0e0e0;
-		font-size: 18px;
-		margin-bottom: 10px;
-	}
+.subtitle{
+	color:#42d84b;
+	font-size:22px;
+	font-weight:600;
+	margin-bottom:12px;
+}
 
-	h1 {
-		color: white;
-		font-size: 64px;
-		margin: 0 0 24px;
-	}
+h1{
+	color:white;
+	font-size:72px;
+	line-height:1.1;
+	margin-bottom:30px;
+}
 
-	.description {
-		color: white;
-		font-size: 21px;
-		line-height: 1.6;
-		margin-bottom: 32px;
-	}
+.description{
+	color:white;
+	font-size:22px;
+	line-height:1.7;
+	margin-bottom:35px;
+}
 
-	.button {
-		display: inline-block;
-		padding: 16px 32px;
-		background: white;
-		color: black;
-		text-decoration: none;
-		border-radius: 12px;
-		font-weight: bold;
-		transition: 0.2s;
-	}
+.button{
+	display:inline-block;
+	background:#35b843;
+	color:white;
+	text-decoration:none;
+	padding:18px 34px;
+	border-radius:14px;
+	font-weight:bold;
+	font-size:18px;
+	transition:.2s;
+}
 
-	.button:hover {
-		transform: scale(1.05);
-		background: #f0f0f0;
-	}
+.button:hover{
+	transform:scale(1.04);
+	background:#2ca138;
+}
 </style>
