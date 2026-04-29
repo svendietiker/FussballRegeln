@@ -65,6 +65,6 @@
 	}
 
 	main {
-		padding: 40px;
+		padding: 0;
 	}
 </style>
