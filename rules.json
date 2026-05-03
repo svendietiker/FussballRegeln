@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Offside",
+    "slug": "offside",
+    "category": "feldspieler",
+    "shortDescription": "Wann steht ein Spieler im Abseits?",
+    "explanation": "Ein Spieler befindet sich in einer Abseitsposition, wenn er der gegnerischen Torlinie näher ist als der Ball und der vorletzte Gegenspieler. Entscheidend ist jedoch, ob er aktiv ins Spiel eingreift.",
+    "example": "Ein Stürmer steht hinter der Verteidigung und bekommt den Ball zugespielt. Wenn er beim Pass im Abseits steht und aktiv ins Spiel eingreift, wird Offside gepfiffen.",
+    "imageUrl": "/img/offside.png",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  },
+  {
+    "title": "Handspiel",
+    "slug": "handspiel",
+    "category": "feldspieler",
+    "shortDescription": "Wann ist Handspiel strafbar?",
+    "explanation": "Ein Handspiel liegt vor, wenn ein Spieler den Ball absichtlich mit der Hand oder dem Arm berührt oder seine Körperfläche unnatürlich vergrössert.",
+    "example": "Springt der Ball an den angelegten Arm, ist es meist kein strafbares Handspiel. Wird der Arm jedoch aktiv zum Ball bewegt, kann gepfiffen werden.",
+    "imageUrl": "",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  },
+  {
+    "title": "Foulspiel",
+    "slug": "foulspiel",
+    "category": "feldspieler",
+    "shortDescription": "Was zählt als Foul im Fussball?",
+    "explanation": "Ein Foul liegt vor, wenn ein Spieler einen Gegner unfair angreift, beispielsweise durch Treten, Halten oder Stossen.",
+    "example": "Ein Verteidiger trifft zuerst den Gegner statt den Ball – dies wird als Foul gewertet.",
+    "imageUrl": "",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  },
+  {
+    "title": "Einwurf",
+    "slug": "einwurf",
+    "category": "feldspieler",
+    "shortDescription": "Wie führt man einen Einwurf korrekt aus?",
+    "explanation": "Der Ball muss mit beiden Händen von hinter dem Kopf über den Kopf geworfen werden, während beide Füsse den Boden berühren.",
+    "example": "Hebt ein Spieler beim Einwurf einen Fuss an, kann dies als falscher Einwurf gewertet werden.",
+    "imageUrl": "",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  },
+  {
+    "title": "Eckball",
+    "slug": "eckball",
+    "category": "feldspieler",
+    "shortDescription": "Wann gibt es einen Eckball?",
+    "explanation": "Ein Eckball wird gegeben, wenn der Ball zuletzt von einem Verteidiger berührt wurde und über die Torlinie ins Aus geht.",
+    "example": "Ein Verteidiger klärt den Ball ins Aus hinter das eigene Tor – es gibt Eckball.",
+    "imageUrl": "",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  },
+  {
+    "title": "Anstoss",
+    "slug": "anstoss",
+    "category": "feldspieler",
+    "shortDescription": "Wie beginnt ein Fussballspiel?",
+    "explanation": "Das Spiel beginnt mit einem Anstoss von der Mittellinie. Der Ball muss sich dabei klar bewegen.",
+    "example": "Ein Spieler spielt den Ball beim Anstoss nach vorne – das Spiel startet.",
+    "imageUrl": "",
+    "videoUrl": "",
+    "validSince": "2024",
+    "isNewRule": false
+  }
+]
