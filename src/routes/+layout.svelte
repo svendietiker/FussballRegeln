@@ -1,5 +1,5 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from "$lib/assets/favicon.svg";
 
 	let { children } = $props();
 </script>
@@ -14,8 +14,8 @@
 	<div class="links">
 		<a href="/">Home</a>
 		<a href="/regeln">Regeln</a>
-		<a href="/feldspieler">Feldspieler</a>
-		<a href="/offside">Offside</a>
+		<a href="#">Suchen</a>
+
 		<a href="#">Fun Facts</a>
 		<a href="#">Login</a>
 	</div>
