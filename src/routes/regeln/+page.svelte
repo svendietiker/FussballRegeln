@@ -1,55 +1,60 @@
-<h1>Regeln</h1>
-<p>Wähle eine Regelkategorie aus.</p>
+<section class="page">
+	<h1>Regeln</h1>
+	<p>Wähle eine Kategorie aus, um passende Fussballregeln zu entdecken.</p>
 
-<div class="grid">
-  <a class="card" href="/feldspieler">
-    <h2>Feldspieler</h2>
-    <p>Regeln wie Offside, Handspiel, Foulspiel und Einwurf.</p>
-  </a>
+	<div class="grid">
+		<a href="/regeln/feldspieler" class="card">
+			<h2>Feldspieler</h2>
+			<p>Offside, Handspiel, Foulspiel, Einwurf und weitere Regeln.</p>
+		</a>
 
-  <div class="card">
-    <h2>Torwart</h2>
-    <p>Regeln rund um den Torwart und Strafraum.</p>
-  </div>
+		<a href="/regeln/torwart" class="card">
+			<h2>Torwart</h2>
+			<p>Regeln rund um Strafraum, Rückpass und Torwartspiel.</p>
+		</a>
 
-  <div class="card">
-    <h2>Schiedsrichter</h2>
-    <p>Entscheidungen, Karten und Spielleitung.</p>
-  </div>
+		<a href="/regeln/schiedsrichter" class="card">
+			<h2>Schiedsrichter</h2>
+			<p>Karten, Entscheidungen und Spielleitung.</p>
+		</a>
 
-  <div class="card">
-    <h2>Neue Regeln</h2>
-    <p>Aktuelle Regeländerungen im Fussball.</p>
-  </div>
-</div>
+		<a href="/regeln/neue-regeln" class="card">
+			<h2>Neue Regeln</h2>
+			<p>Aktuelle Regeländerungen einfach erklärt.</p>
+		</a>
+	</div>
+</section>
 
 <style>
-  h1 {
-    font-size: 42px;
-  }
+	.page {
+		padding: 140px 60px 60px;
+	}
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    margin-top: 30px;
-  }
+	h1 {
+		font-size: 48px;
+	}
 
-  .card {
-    background-color: white;
-    padding: 28px;
-    border-radius: 14px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-    transition: 0.2s;
-  }
+	p {
+		font-size: 18px;
+	}
 
-  .card:hover {
-    transform: translateY(-4px);
-  }
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+		margin-top: 40px;
+	}
 
-  .card h2 {
-    margin-top: 0;
-  }
+	.card {
+		background: white;
+		color: black;
+		text-decoration: none;
+		padding: 30px;
+		border-radius: 18px;
+		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+	}
+
+	.card:hover {
+		transform: translateY(-4px);
+	}
 </style>
