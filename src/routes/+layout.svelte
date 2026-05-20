@@ -14,7 +14,7 @@
 	<div class="links">
 		<a href="/">Home</a>
 		<a href="/regeln">Regeln</a>
-		<a href="/fun-facts">Fun Facts</a>
+		<a href="/funfacts">Fun Facts</a>
 		<a href="/suchen">Suchen</a>
 		<a href="/login">Login</a>
 	</div>
