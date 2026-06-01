@@ -53,18 +53,27 @@
 	}
 
 	.card {
-		background: rgba(255, 255, 255, 0.95);
-		color: black;
-		text-decoration: none;
-		padding: 30px;
-		border-radius: 18px;
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-		backdrop-filter: blur(4px);
-		transition: all 0.2s ease;
-	}
+	background: rgba(0, 0, 0, 0.35);
+	backdrop-filter: blur(10px);
+
+	color: white;
+	text-decoration: none;
+
+	padding: 30px;
+	border-radius: 18px;
+
+	border: 1px solid rgba(255, 255, 255, 0.1);
+
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+	transition: all 0.2s ease;
+}
 
 	.card:hover {
-		transform: translateY(-6px);
-		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-	}
+	transform: translateY(-6px);
+
+	background: rgba(0, 0, 0, 0.6);
+
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
 </style>
