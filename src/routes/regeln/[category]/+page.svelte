@@ -3,7 +3,7 @@
 </script>
 
 <section class="page">
-	<a href="/regeln" class="back">← Zurück zu Regeln</a>
+	
 
 	<h1>{data.category}</h1>
 	<p>Wähle eine Regel aus dieser Kategorie aus.</p>
@@ -16,6 +16,12 @@
 			</a>
 		{/each}
 	</div>
+
+	<div class="back-container">
+	<a href="/regeln" class="back-button">
+		← Zurück zu Regeln
+	</a>
+</div>
 </section>
 
 <style>
@@ -37,11 +43,7 @@
 	color: white;
 }
 
-	.back {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-}
+	
 
 	h1 {
 		font-size: 48px;
@@ -80,5 +82,28 @@
 	transform: translateY(-6px);
 	background: rgba(0, 0, 0, 0.6);
 	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.back-container {
+	margin-top: 50px;
+}
+
+.back-button {
+	display: inline-block;
+	background: #39d353;
+
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+
+	padding: 14px 28px;
+	border-radius: 14px;
+
+	transition: all 0.2s ease;
+}
+
+.back-button:hover {
+	background: #2db847;
+	transform: translateY(-2px);
 }
 </style>
