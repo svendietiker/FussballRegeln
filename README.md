@@ -31,9 +31,7 @@ Kurz beschreiben, welches Problem adressiert wird und welches Ergebnis angestreb
 
 ## 2. Lösungsidee
 Beschreibt die Lösungsidee.
-- **Kernfunktionalität:** _[Workflows kurz nennen und optional illustrieren]_  
-- **Annahmen [Optional]:** _[welche Hypothesen werden geprüft?]_
-- **Abgrenzung [Optional]:** _[Was gehört explizit nicht zum Umfang?]_
+Meine Webseite soll das Verständnis in der Fussballwelt verbessern und hitzige Diskussionen verringern.
 
 ## 3. Vorgehen & Artefakte
 Die Durchführung erfolgt phasenbasiert; dokumentieren Sie die wichtigsten Ergebnisse je Phase.
