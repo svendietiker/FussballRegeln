@@ -5,6 +5,7 @@
 <section class="login-page">
 	<div class="box">
 		<h1>Login</h1>
+		<p class="subtitle">Melde dich mit deinem Konto an.</p>
 
 		{#if form?.error}
 			<p class="error">{form.error}</p>
@@ -15,8 +16,6 @@
 		{/if}
 
 		<form method="POST" action="?/login">
-			<h2>Anmelden</h2>
-
 			<label>
 				E-Mail
 				<input name="email" type="email" required />
@@ -30,86 +29,105 @@
 			<button type="submit">Einloggen</button>
 		</form>
 
-		<hr />
-
-		<form method="POST" action="?/register">
-			<h2>Registrieren</h2>
-
-			<label>
-				E-Mail
-				<input name="email" type="email" required />
-			</label>
-
-			<label>
-				Passwort
-				<input name="password" type="password" required minlength="6" />
-			</label>
-
-			<button type="submit">Registrieren</button>
-		</form>
+		<p class="register-link">
+			Noch kein Konto?
+			<a href="/register">Hier kannst du dich registrieren</a>
+		</p>
 	</div>
 </section>
 
 <style>
 	.login-page {
+		min-height: 100vh;
 		padding: 140px 20px 60px;
 		display: flex;
 		justify-content: center;
+		align-items: flex-start;
+
+		background:
+			linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+			url('/img/hintergrundhome.png');
+
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		color: white;
 	}
 
 	.box {
 		width: 100%;
-		max-width: 420px;
-		background: white;
-		padding: 30px;
-		border-radius: 18px;
-		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+		max-width: 460px;
+		background: rgba(0, 0, 0, 0.45);
+		backdrop-filter: blur(10px);
+		padding: 40px;
+		border-radius: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	}
 
 	h1 {
-		text-align: center;
+		font-size: 42px;
+		margin-bottom: 8px;
+	}
+
+	.subtitle {
+		color: rgba(255, 255, 255, 0.8);
+		margin-bottom: 28px;
 	}
 
 	form {
 		display: flex;
 		flex-direction: column;
-		gap: 14px;
+		gap: 18px;
 	}
 
 	label {
 		display: flex;
 		flex-direction: column;
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	input {
-		padding: 12px;
-		border-radius: 8px;
-		border: 1px solid #ccc;
-		margin-top: 6px;
+		padding: 14px;
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		margin-top: 8px;
+		background: rgba(255, 255, 255, 0.95);
+		font-size: 16px;
 	}
 
 	button {
-		padding: 12px;
+		margin-top: 10px;
+		padding: 14px;
 		border: none;
-		border-radius: 8px;
-		background: #1f7a3a;
+		border-radius: 14px;
+		background: #39d353;
 		color: white;
-		font-weight: bold;
+		font-weight: 700;
 		cursor: pointer;
 	}
 
+	button:hover {
+		background: #2db847;
+	}
+
+	.register-link {
+		margin-top: 24px;
+		font-size: 15px;
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	.register-link a {
+		color: #39d353;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
 	.error {
-		color: red;
-		text-align: center;
+		color: #ff6b6b;
 	}
 
 	.success {
-		color: green;
-		text-align: center;
-	}
-
-	hr {
-		margin: 30px 0;
+		color: #39d353;
 	}
 </style>
