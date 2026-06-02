@@ -4,56 +4,72 @@
 </script>
 
 <section class="detail-page">
-	<a class="back-link" href={`/regeln/${rule.category}`}>← Zurück zur Kategorie</a>
+	<div class="rule-card">
+		<h1>{rule.title}</h1>
+		<p class="short">{rule.shortDescription}</p>
 
-	<h1>{rule.title}</h1>
-	<p class="short">{rule.shortDescription}</p>
+		{#if rule.imageUrl}
+			<img src={rule.imageUrl} alt={rule.title} class="rule-image" />
+		{/if}
 
-	{#if rule.imageUrl}
-		<img src={rule.imageUrl} alt={rule.title} class="rule-image" />
-	{/if}
+		<div class="info-card">
+			<h2>Erklärung</h2>
+			<p>{rule.explanation}</p>
+		</div>
 
-	<div class="card">
-		<h2>Erklärung</h2>
-		<p>{rule.explanation}</p>
+		<div class="info-card">
+			<h2>Beispiel</h2>
+			<p>{rule.example}</p>
+		</div>
+
+		<p class="meta">Gültig seit: {rule.validSince}</p>
+
+		{#if rule.isNewRule}
+			<p class="badge">Neue Regel</p>
+		{/if}
 	</div>
 
-	<div class="card">
-		<h2>Beispiel</h2>
-		<p>{rule.example}</p>
+	<div class="back-container">
+		<a href={`/regeln/${rule.category}`} class="back-button">
+			← Zurück zur Kategorie
+		</a>
 	</div>
-
-	<p class="meta">Gültig seit: {rule.validSince}</p>
-
-	{#if rule.isNewRule}
-		<p class="badge">Neue Regel</p>
-	{/if}
 </section>
 
 <style>
 	.detail-page {
-		max-width: 900px;
-		margin: 0 auto;
-		padding: 3rem 1.5rem;
+		min-height: 100vh;
+		padding: 140px 60px 60px;
+
+		background:
+			linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+			url('/img/hintergrundhome.png');
+
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		color: white;
 	}
 
-	.back-link {
-		display: inline-block;
-		margin-bottom: 1.5rem;
-		color: #1f7a3a;
-		text-decoration: none;
-		font-weight: 600;
+	.rule-card {
+		max-width: 1000px;
+		background: rgba(0, 0, 0, 0.45);
+		backdrop-filter: blur(10px);
+		padding: 40px;
+		border-radius: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		margin-bottom: 0.5rem;
+		font-size: 48px;
+		margin-bottom: 10px;
 	}
 
 	.short {
-		font-size: 1.2rem;
-		color: #555;
-		margin-bottom: 2rem;
+		font-size: 20px;
+		color: rgba(255, 255, 255, 0.85);
+		margin-bottom: 30px;
 	}
 
 	.rule-image {
@@ -61,32 +77,52 @@
 		max-height: 420px;
 		object-fit: cover;
 		border-radius: 16px;
-		margin-bottom: 2rem;
+		margin-bottom: 30px;
 	}
 
-	.card {
-		background: white;
-		padding: 1.5rem;
+	.info-card {
+		background: rgba(255, 255, 255, 0.08);
+		padding: 24px;
 		border-radius: 16px;
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		margin-bottom: 1.5rem;
+		margin-bottom: 20px;
 	}
 
-	.card h2 {
+	.info-card h2 {
 		margin-top: 0;
-		color: #1f7a3a;
+		color: #39d353;
 	}
 
+	.info-card p,
 	.meta {
-		color: #666;
+		color: rgba(255, 255, 255, 0.9);
 	}
 
 	.badge {
 		display: inline-block;
-		background: #1f7a3a;
+		background: #39d353;
 		color: white;
-		padding: 0.4rem 0.8rem;
+		padding: 8px 14px;
 		border-radius: 999px;
 		font-weight: 600;
+	}
+
+	.back-container {
+		margin-top: 40px;
+	}
+
+	.back-button {
+		display: inline-block;
+		background: #39d353;
+		color: white;
+		text-decoration: none;
+		font-weight: 600;
+		padding: 14px 28px;
+		border-radius: 14px;
+		transition: all 0.2s ease;
+	}
+
+	.back-button:hover {
+		background: #2db847;
+		transform: translateY(-2px);
 	}
 </style>
