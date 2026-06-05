@@ -22,16 +22,29 @@
 <!-- Diese Vorlage ist für eine README.md im Repository gedacht. Abschnitte mit [Optional] können weggelassen werden, wenn in den Übungen nichts anderes verlangt wird. -->
 
 ## 1. Ausgangslage
-Kurz beschreiben, welches Problem adressiert wird und welches Ergebnis angestrebt ist. Wem nützt die Lösung, wer ist beteiligt oder betroffen?
-- **Problem:** _[Das Problem ist identifiziert, verständlich beschrieben und optional mit Beispielen illustriert]_  
-- **Ziele:** _[stichwortartig oder einige Sätze]_  
-- **Primäre Zielgruppe:** _[kurz beschreiben]_  
-- **Weitere Stakeholder [Optional]:** _[z. B. Verwaltung, Geschäftsleitung]_  
+Fussball gehört weltweit zu den beliebtesten Sportarten. Obwohl die grundlegenden Regeln vielen Menschen bekannt sind, entstehen während Spielen oder beim Verfolgen von Fussballübertragungen häufig Fragen zu bestimmten Spielsituationen. Insbesondere komplexere Regeln wie Abseits, Handspiel oder die Vorteilsregel führen oft zu Unsicherheiten und Diskussionen. Gleichzeitig sind offizielle Regelwerke meist umfangreich, schwer verständlich und für Einsteiger wenig benutzerfreundlich.
+
+Aus diesem Grund entstand die Idee, eine Webanwendung zu entwickeln, welche Fussballregeln einfach, übersichtlich und verständlich erklärt. Die Anwendung soll sowohl für Fussballinteressierte als auch für Spielerinnen und Spieler, Trainer oder Zuschauer geeignet sein. Ziel ist es, Informationen schnell auffindbar zu machen und Regelverständnis durch verständliche Erklärungen und Beispiele zu fördern.
+
+Die Anwendung wurde als Einzelprojekt im Rahmen des Moduls Prototyping entwickelt und unter folgender URL veröffentlicht:
+
+https://fussballregeln.netlify.app
 
 
 ## 2. Lösungsidee
-Beschreibt die Lösungsidee.
-Meine Webseite soll das Verständnis in der Fussballwelt verbessern und hitzige Diskussionen verringern.
+Die entwickelte Webanwendung „FussballRegeln“ bietet eine zentrale Plattform, auf der wichtige Fussballregeln verständlich erklärt werden. Anstatt lange Regelbücher durchsuchen zu müssen, können Benutzer direkt über Kategorien oder die Suchfunktion zu den gewünschten Informationen gelangen.
+
+Die Anwendung umfasst verschiedene Bereiche:
+
+  Startseite mit Einführung in das Thema
+  Kategorienübersicht der Fussballregeln
+  Detailseiten zu einzelnen Regeln
+  Suchfunktion für schnelles Finden von Regeln
+  Fun-Facts-Bereich mit historischen und nicht mehr gültigen Fussballregeln
+  Login- und Registrierungsfunktion
+  MongoDB-Datenbank zur Verwaltung der Inhalte
+
+Besonderer Wert wurde auf eine übersichtliche Navigation, ein modernes Design und eine einfache Bedienung gelegt. Durch die Kombination aus kurzen Erklärungen, Beispielen und Bildern sollen auch komplexere Regeln leicht verständlich vermittelt werden.
 
 ## 3. Vorgehen & Artefakte
 Die Durchführung erfolgt phasenbasiert; dokumentieren Sie die wichtigsten Ergebnisse je Phase.
