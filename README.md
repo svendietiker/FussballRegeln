@@ -245,25 +245,76 @@ Die Usability-Evaluation zeigte, dass die grundlegende Benutzerführung bereits 
 Die finale Version der Anwendung ist deutlich benutzerfreundlicher, optisch ansprechender und funktional umfangreicher als der ursprünglich getestete Prototyp. Dadurch wurde das Hauptziel erreicht, Fussballregeln einfach und verständlich zugänglich zu machen.
 
 ## 4. Erweiterungen [Optional]
-Dokumentiert Erweiterungen über den Mindestumfang hinaus.
-> **Hinweis:** Jede Erweiterung ist separat nach dem folgenden Schema zu beschreiben.
 
-### _[4.x Kurzbeschreibung / Titel]_  
-- **Beschreibung & Nutzen:** _[Was wurde erweitert? Warum?]_  
-- **Wo umgesetzt:** _[Wie und wo wurde es gemacht? Frontend, Backend, Datenbank?]_  
-- **Referenz:** _[Wo wird die Erweiterung auch noch beschrieben, z.B. Screenshot oder Beschreibung in einem anderen Kapitel]_  
-- **Aus Evaluation abgeleitet?:** _[Wurde diese Erweiterung als Folge eines in der Evaluation identifizierten Issues implementiert?]_  
+### 4.1 Fun-Facts-Bereich
+#### Beschreibung & Nutzen
 
-> Das folgende **Beispiel** wurde bewusst kurz gehalten. Erweiterungen dürfen auch ausführlicher beschrieben werden.
+Zusätzlich zu den aktuellen Fussballregeln wurde ein Bereich mit historischen und heute nicht mehr gültigen Regeln entwickelt. Dadurch erhalten Benutzer interessante Hintergrundinformationen zur Entwicklung des Fussballs und können ihr Wissen über die Geschichte des Sports erweitern.
 
-### 4.1 Tabelle nach Kategorien filtern
-- **Beschreibung & Nutzen:** Tabelle X kann nach Kategorie gefiltert werden, weil User typischerweise nur an einer bestimmten Kategorie interessiert sind.  
-- **Wo umgesetzt:** 
-  - **Frontend:** Tabelle mit Dropdown in Datei ...
-  - **Backend:** Form Action ... in Datei ...
-  - **Datenbank:** MongoDB-Query in Datei ...
-- **Referenz:** Screenshot in Kap. x.y
-- **Aus Evaluation abgeleitet?:** Ja, Issue x.y
+#### Wo umgesetzt
+- Frontend: Eigene Übersichtsseite sowie Detailseiten für einzelne Fun Facts
+- Backend: Dynamisches Laden der Inhalte aus MongoDB
+- Datenbank: Eigene Collection „funfacts“
+#### Referenz
+
+Kapitel 3.4.2 Umsetzung (Technik)
+
+#### Aus Evaluation abgeleitet?
+
+Teilweise. Während der Evaluation wurde festgestellt, dass zusätzliche Inhalte den Mehrwert der Anwendung erhöhen würden.
+
+### 4.2 Suchfunktion
+
+#### Beschreibung & Nutzen
+
+Zur Verbesserung der Benutzerfreundlichkeit wurde eine Suchfunktion integriert. Nutzer können dadurch gezielt nach Begriffen wie „Offside“, „Handspiel“ oder „Torwart“ suchen und müssen nicht alle Kategorien manuell durchsuchen.
+
+#### Wo umgesetzt
+- Frontend: Suchseite mit Suchfeld und Ergebnisanzeige
+- Backend: Verarbeitung der Suchanfrage und Filterung der Daten
+- Datenbank: MongoDB-Abfragen auf die Collection „rules“
+#### Referenz
+
+Kapitel 3.4.2 Umsetzung (Technik)
+
+#### Aus Evaluation abgeleitet?
+
+Ja. Die Testpersonen äusserten den Wunsch, Regeln schneller finden zu können.
+
+### 4.3 Login und Registrierung
+
+#### Beschreibung & Nutzen
+
+Über die Grundanforderungen hinaus wurde ein Benutzerbereich mit Login- und Registrierungsfunktion umgesetzt. Dadurch können Benutzerkonten erstellt und verwaltet werden.
+
+#### Wo umgesetzt
+- Frontend: Login- und Registrierungsseiten
+- Backend: Verarbeitung der Anmeldedaten und Passwortprüfung
+- Datenbank: MongoDB Collection „users“
+#### Referenz
+
+Kapitel 3.4.2 Umsetzung (Technik)
+
+#### Aus Evaluation abgeleitet?
+
+Ja. Während der Evaluation war die Funktion noch nicht vollständig implementiert und wurde anschliessend ergänzt.
+
+### 4.4 Überarbeitung des Designs
+
+#### Beschreibung & Nutzen
+
+Nach der Evaluation wurde das ursprüngliche Design überarbeitet. Die finale Version verwendet einen Stadion-Hintergrund, transparente Karten sowie ein einheitliches Farbschema. Dadurch wirkt die Anwendung professioneller und thematisch passender.
+
+#### Wo umgesetzt
+- Frontend: Sämtliche Seiten der Anwendung
+- CSS: Anpassung von Layout, Farben und Benutzeroberfläche
+#### Referenz
+
+Kapitel 3.4.1 Entwurf (Design)
+
+#### Aus Evaluation abgeleitet?
+
+Ja. Die Testpersonen empfanden das ursprüngliche Design als zu schlicht.
 
 ## 5. Projektorganisation [Optional]
 Beispiele:
