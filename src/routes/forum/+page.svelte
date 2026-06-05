@@ -15,7 +15,7 @@
 			<p class="success">{form.success}</p>
 		{/if}
 
-		<form method="POST" class="post-form">
+		<form method="POST" action="?/createPost" class="post-form">
 			<label>
 				Titel
 				<input name="title" type="text" placeholder="z.B. War das wirklich Abseits?" required />
@@ -46,6 +46,34 @@
 					<p class="meta">
 						Von {post.authorName} · {post.authorEmail}
 					</p>
+
+					<div class="comments">
+						<h4>Kommentare</h4>
+
+						{#if post.comments.length > 0}
+							{#each post.comments as comment}
+								<div class="comment">
+									<p>{comment.text}</p>
+									<span>Von {comment.authorName} · {comment.authorEmail}</span>
+								</div>
+							{/each}
+						{:else}
+							<p class="no-comments">Noch keine Kommentare.</p>
+						{/if}
+
+						<form method="POST" action="?/addComment" class="comment-form">
+							<input type="hidden" name="postId" value={post._id} />
+
+							<textarea
+								name="commentText"
+								rows="3"
+								placeholder="Antwort schreiben..."
+								required
+							></textarea>
+
+							<button type="submit">Antworten</button>
+						</form>
+					</div>
 				</article>
 			{/each}
 		{:else}
@@ -142,6 +170,55 @@
 
 	.text {
 		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.comments {
+		margin-top: 24px;
+		padding-top: 18px;
+		border-top: 1px solid rgba(255, 255, 255, 0.12);
+	}
+
+	.comments h4 {
+		color: #39d353;
+		margin-bottom: 12px;
+	}
+
+	.comment {
+		background: rgba(255, 255, 255, 0.08);
+		padding: 14px;
+		border-radius: 12px;
+		margin-bottom: 12px;
+	}
+
+	.comment p {
+		margin: 0 0 6px;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.comment span,
+	.no-comments {
+		color: rgba(255, 255, 255, 0.65);
+		font-size: 14px;
+	}
+
+	.comment-form {
+		margin-top: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.comment-form textarea {
+		padding: 14px;
+		border-radius: 12px;
+		border: none;
+		font-size: 15px;
+		font-family: Arial, sans-serif;
+		background: rgba(255, 255, 255, 0.95);
+	}
+
+	.comment-form button {
+		align-self: flex-start;
 	}
 
 	.error {

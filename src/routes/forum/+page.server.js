@@ -21,13 +21,14 @@ export async function load({ cookies }) {
 		posts: posts.map((post) => ({
 			...post,
 			_id: post._id.toString(),
-			createdAt: post.createdAt?.toISOString()
+			createdAt: post.createdAt?.toISOString(),
+			comments: post.comments ?? []
 		}))
 	};
 }
 
 export const actions = {
-	default: async ({ request, cookies }) => {
+	createPost: async ({ request, cookies }) => {
 		const userId = cookies.get('user');
 
 		if (!userId) {
@@ -39,9 +40,7 @@ export const actions = {
 		const text = data.get('text')?.toString().trim();
 
 		if (!title || !text) {
-			return fail(400, {
-				error: 'Bitte Titel und Beitrag ausfüllen.'
-			});
+			return fail(400, { error: 'Bitte Titel und Beitrag ausfüllen.' });
 		}
 
 		const db = await connectToDatabase();
@@ -55,11 +54,48 @@ export const actions = {
 			text,
 			authorEmail: user?.email ?? 'Unbekannt',
 			authorName: user?.displayName ?? 'Unbekannt',
+			comments: [],
 			createdAt: new Date()
 		});
 
-		return {
-			success: 'Beitrag wurde veröffentlicht.'
-		};
+		return { success: 'Beitrag wurde veröffentlicht.' };
+	},
+
+	addComment: async ({ request, cookies }) => {
+		const userId = cookies.get('user');
+
+		if (!userId) {
+			throw redirect(302, '/login');
+		}
+
+		const data = await request.formData();
+		const postId = data.get('postId')?.toString();
+		const commentText = data.get('commentText')?.toString().trim();
+
+		if (!postId || !commentText) {
+			return fail(400, { error: 'Bitte Kommentar eingeben.' });
+		}
+
+		const db = await connectToDatabase();
+
+		const user = await db.collection('users').findOne({
+			_id: new ObjectId(userId)
+		});
+
+		await db.collection('forumPosts').updateOne(
+			{ _id: new ObjectId(postId) },
+			{
+				$push: {
+					comments: {
+						text: commentText,
+						authorEmail: user?.email ?? 'Unbekannt',
+						authorName: user?.displayName ?? 'Unbekannt',
+						createdAt: new Date()
+					}
+				}
+			}
+		);
+
+		return { success: 'Kommentar wurde veröffentlicht.' };
 	}
 };
