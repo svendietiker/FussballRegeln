@@ -50,12 +50,57 @@ Besonderer Wert wurde auf eine übersichtliche Navigation, ein modernes Design u
 Die Durchführung erfolgt phasenbasiert; dokumentieren Sie die wichtigsten Ergebnisse je Phase.
 
 ### 3.1 Understand & Define
-- **Zielgruppenverständnis:** _[Problemraumanalyse, Recherche, (Proto-)Personas]_
-- **Wesentliche Erkenntnisse:** _[Stichpunkte]_
+Zu Beginn des Projekts wurde untersucht, welche Probleme bei bestehenden Informationsquellen zu Fussballregeln auftreten. Dabei zeigte sich, dass offizielle Regelwerke häufig sehr umfangreich und schwer verständlich formuliert sind. Für viele Nutzer ist es deshalb schwierig, schnell Antworten auf konkrete Fragen zu finden.
 
+Als Zielgruppe wurden folgende Personen definiert:
+
+- Fussballinteressierte Zuschauer
+- Juniorenspieler und Amateurspieler
+- Trainer und Betreuer
+- Personen, die Fussballregeln besser verstehen möchten
+
+Basierend auf dieser Analyse wurden folgende Anforderungen definiert:
+
+### Funktionale Anforderungen
+- Regeln müssen kategorisiert dargestellt werden
+- Detailinformationen zu jeder Regel müssen abrufbar sein
+- Suchfunktion für Regeln
+- Login und Registrierung
+- Verwaltung der Inhalte über MongoDB
+### Nicht-funktionale Anforderungen
+- Einfache Bedienbarkeit
+- Übersichtliche Navigation
+- Schnelle Ladezeiten
+- Modernes und ansprechendes Design
+- Responsives Layout
+
+Aus diesen Anforderungen entstand die zentrale Fragestellung:
+
+Wie kann eine Webanwendung entwickelt werden, welche Fussballregeln verständlich erklärt und gleichzeitig eine schnelle und intuitive Navigation ermöglicht?
 ### 3.2 Sketch
-- **Variantenüberblick:** _[kurz]_
-- **Skizzen:** _[Mehrere Varianten; Unterschiede kurz dokumentieren.]_
+Nach der Definitionsphase wurden erste Ideen und Layouts skizziert. Ziel war es, eine möglichst einfache Struktur zu entwickeln, damit Nutzer ohne Einarbeitung die gewünschten Informationen finden können.
+
+Die Navigation wurde bereits früh in folgende Hauptbereiche unterteilt:
+
+- Home
+- Regeln
+- Fun Facts
+- Suchen
+- Login
+
+Für die Regelübersicht wurde eine Kartenansicht gewählt, da diese Informationen übersichtlich präsentiert und gleichzeitig eine einfache Erweiterung ermöglicht.
+
+Anschliessend wurden erste Wireframes in Figma erstellt. Die Figma-Skizzen dienten dazu, die grundlegende Seitenstruktur, Navigation und Benutzerführung zu visualisieren.
+
+Die wichtigsten Seiten waren bereits in den frühen Entwürfen vorgesehen:
+
+- Startseite
+- Kategorienübersicht
+- Regel-Detailseite
+- Suchseite
+- Login-Bereich
+
+Die Skizzen bildeten die Grundlage für die anschliessende Umsetzung des Prototyps.
 
 ### 3.3 Decide
 - **Gewählte Variante & Begründung:** _[Entscheidkriterien nennen]_  
