@@ -132,20 +132,50 @@ Neben den ursprünglich geplanten Funktionen wurde bereits früh entschieden, zu
 ### 3.4 Prototype
 
 #### 3.4.1. Entwurf (Design)
-Beschreibt die Gestaltung und Interaktion.
-> **Hinweis:** Hier wird der **Prototyp** beschrieben, nicht das **Mockup**.
-- **Informationsarchitektur:** _[z. B. Seiten/Navigation: Konzept, nicht die technische Umsetzung]_
-- **User Interface Design:** _[wichtige Screens: Screenshots mit kurzen Erläuterungen]_  
-- **Designentscheidungen:** _[zentrale Entscheidungen und Begründungen]_
+Nach der Analyse der Anforderungen und der Erstellung erster Skizzen in Figma wurde das finale Design der Anwendung definiert. Ziel war es, eine moderne und übersichtliche Webanwendung zu entwickeln, welche Fussballregeln verständlich vermittelt und gleichzeitig einfach zu bedienen ist.
+
+Bereits in den ersten Entwürfen wurde eine klare Navigationsstruktur festgelegt. Die Anwendung wurde in die Bereiche Home, Regeln, Fun Facts, Suchen und Login unterteilt. Dadurch sollen Nutzer die gewünschten Informationen möglichst schnell finden können.
+
+Für die Darstellung der Inhalte wurde ein kartenbasiertes Layout gewählt. Die Regeln werden zunächst nach Kategorien dargestellt und anschliessend auf einzelnen Detailseiten erklärt. Dadurch wird die Informationsmenge pro Seite reduziert und die Übersichtlichkeit verbessert.
+
+Während der Entwicklung wurde das Design mehrfach überarbeitet. Die erste Version verwendete einen einfachen hellen Hintergrund. Im Rahmen der Evaluation wurde jedoch festgestellt, dass dieser wenig Bezug zum Thema Fussball herstellt und insgesamt eher schlicht wirkt. Aus diesem Grund wurde das Design angepasst.
+
+Die finale Version verwendet ein Stadionbild als Hintergrund sowie ein dunkles Farbschema mit transparenten Karten (Glassmorphism-Effekt). Grüne Buttons dienen als visuelle Hervorhebung wichtiger Aktionen und sorgen für eine einheitliche Benutzerführung. Durch diese Gestaltung entsteht ein moderner und thematisch passender Gesamteindruck.
+
+Zusätzlich wurde darauf geachtet, dass sämtliche Seiten ein einheitliches Erscheinungsbild besitzen. Die Regelübersicht, Kategorienseiten, Detailseiten, Suchfunktion sowie Login- und Registrierungsbereich verwenden dieselben Farben, Kartenlayouts und Navigationselemente.
 
 #### 3.4.2. Umsetzung (Technik)
-Fasst die technische Realisierung zusammen.
-- **Technologie-Stack:** _[SvelteKit, Bibliotheken falls genutzt]_
-- **Tooling:** _[IDE/Erweiterungen, lokale/Cloud-Tools; den Einsatz von KI beschreiben Sie im Kapitel **KI-Deklaration**]_  
-- **Struktur & Komponenten:** _[Seiten, Routen, State/Stores, wichtige Komponenten]_
-- **Daten & Schnittstellen:** _[Wie werden Daten gespeichert, verwaltet, abgerufen?]_
-- **Deployment:** _[URL]_  
-- **Besondere Entscheidungen:** _[z. B. Trade-offs, Vereinfachungen]_  
+Die technische Umsetzung erfolgte mit SvelteKit und Visual Studio Code. Als Datenbank wurde MongoDB Atlas verwendet. Die Daten wurden über MongoDB Compass verwaltet und gepflegt.
+
+Die Anwendung basiert auf einer mehrstufigen Struktur. Auf der ersten Ebene befindet sich die Kategorienübersicht. Anschliessend können Benutzer eine Kategorie auswählen und gelangen zu den darin enthaltenen Regeln. Jede Regel besitzt wiederum eine eigene Detailseite mit Erklärung, Beispiel und Bild.
+
+Für die Speicherung der Inhalte wurden mehrere MongoDB Collections verwendet:
+
+- rules (Fussballregeln)
+- funfacts (historische und nicht mehr gültige Regeln)
+- users (Benutzerkonten)
+
+Die Regeldaten werden dynamisch aus der Datenbank geladen. Dadurch können neue Inhalte jederzeit ergänzt werden, ohne dass Änderungen am Programmcode notwendig sind.
+
+Im Verlauf der Entwicklung wurden mehrere Funktionen implementiert:
+
+- Kategorienübersicht
+- Detailseiten für Regeln
+- Fun-Facts-Bereich
+- Suchfunktion
+- Login
+- Registrierung
+- Benutzerverwaltung über MongoDB
+
+Die Suchfunktion ermöglicht das schnelle Auffinden von Regeln anhand von Suchbegriffen. Die Login- und Registrierungsfunktion speichert Benutzerdaten in der MongoDB-Collection „users“.
+
+Für die Veröffentlichung wurde Netlify verwendet. Während des Deployments traten verschiedene technische Herausforderungen auf, unter anderem Probleme mit Environment Variables, der MongoDB-Verbindung sowie dynamischen Routen. Diese konnten durch systematisches Debugging behoben werden.
+
+Die fertige Anwendung wurde erfolgreich veröffentlicht und ist unter folgender Adresse erreichbar:
+
+https://fussballregeln.netlify.app
+
+Durch die Verwendung von SvelteKit, MongoDB und Netlify entstand eine moderne Webanwendung, welche dynamische Inhalte verwalten und dem Benutzer übersichtlich präsentieren kann.
 
 ### 3.5 Validate
 - **URL der getesteten Version** (separat deployt)
