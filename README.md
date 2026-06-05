@@ -186,71 +186,59 @@ Die Evaluation wurde mit zwei Mitstudenten durchgeführt.
 
 Den Testpersonen wurden folgende Aufgaben gestellt:
 
-Aufgabe 1
+### Aufgabe 1
 
 Finde die Regel „Offside“ und lies die Erklärung durch.
 
-Aufgabe 2
+### Aufgabe 2
 
 Finde den Login-Bereich und versuche, ein Benutzerkonto zu erstellen.
 
-Beobachtungen
+### Beobachtungen
 
 Während der Durchführung wurden die Nutzer beobachtet. Zusätzlich wurde nach Abschluss der Aufgaben Feedback eingeholt.
 
-Positive Rückmeldungen
-Die Navigation wurde als verständlich wahrgenommen.
-Die Kategorien erleichtern das Finden von Regeln.
-Die Struktur der Detailseiten wurde als übersichtlich bewertet.
-Die Anwendung wirkt modern und professionell.
-Festgestellte Probleme
+### Positive Rückmeldungen
+- Die Navigation wurde als verständlich wahrgenommen.
+- Die Kategorien erleichtern das Finden von Regeln.
+- Die Struktur der Detailseiten wurde als übersichtlich bewertet.
+- Die Anwendung wirkt modern und professionell.
+### Festgestellte Probleme
 
-Die Evaluation zeigte jedoch auch einige Schwachstellen.
+Die Evaluation zeigte jedoch auch einige Schwachstellen:
 
-Fehlender Zurück-Button
+#### Fehlender Zurück-Button
+  Auf den Kategorien- und Detailseiten existierte ursprünglich kein gut sichtbarer Zurück-Button. Die Testpersonen mussten teilweise den Browser-Zurück-Button verwenden.
+#### Zu schlichtes Design
+  Die frühen Versionen verwendeten einen hellen Hintergrund. Die Testpersonen empfanden das Erscheinungsbild als wenig ansprechend und nicht ausreichend mit dem Thema Fussball verbunden.
+#### Fehlende Zusatzfunktionen
+  Zum Zeitpunkt des ersten Tests waren die Bereiche „Fun Facts“ und „Suchen“ noch nicht vollständig umgesetzt.
+#### Registrierung noch nicht funktionsfähig
+  Die Login-Seite war bereits vorhanden, jedoch bestand noch keine vollständige Verbindung zur MongoDB-Benutzerdatenbank. Eine Registrierung war deshalb noch nicht möglich.
 
-Auf den Kategorien- und Detailseiten existierte ursprünglich kein gut sichtbarer Zurück-Button. Die Testpersonen mussten teilweise den Browser-Zurück-Button verwenden.
+### Umgesetzte Verbesserungen
 
-Zu schlichtes Design
+Basierend auf dem Feedback wurden verschiedene Anpassungen vorgenommen:
 
-Die frühen Versionen verwendeten einen hellen Hintergrund. Die Testpersonen empfanden das Erscheinungsbild als wenig ansprechend und nicht ausreichend mit dem Thema Fussball verbunden.
-
-Fehlende Zusatzfunktionen
-
-Zum Zeitpunkt des ersten Tests waren die Bereiche „Fun Facts“ und „Suchen“ noch nicht vollständig umgesetzt.
-
-Registrierung noch nicht funktionsfähig
-
-Die Login-Seite war bereits vorhanden, jedoch bestand noch keine vollständige Verbindung zur MongoDB-Benutzerdatenbank. Eine Registrierung war deshalb noch nicht möglich.
-
-Umgesetzte Verbesserungen
-
-Basierend auf dem Feedback wurden verschiedene Anpassungen vorgenommen.
-
-Verbesserung der Navigation
-
-Es wurden gut sichtbare grüne Zurück-Buttons eingeführt. Dadurch können Benutzer jederzeit einfach zur vorherigen Seite zurückkehren.
-
-Überarbeitung des Designs
-
-Der Hintergrund wurde durch ein Stadionbild ersetzt. Zusätzlich wurden transparente Karten mit Glassmorphism-Effekt eingeführt.
-
-Diese Änderungen verbesserten die visuelle Wirkung der Anwendung deutlich.
-
-Erweiterung der Funktionen
+#### Verbesserung der Navigation
+  Es wurden gut sichtbare grüne Zurück-Buttons eingeführt. Dadurch können Benutzer jederzeit einfach zur vorherigen Seite zurückkehren.
+#### Überarbeitung des Designs
+  Der Hintergrund wurde durch ein Stadionbild ersetzt. Zusätzlich wurden transparente Karten mit Glassmorphism-Effekt eingeführt. Diese Änderungen verbesserten die visuelle Wirkung der Anwendung deutlich.
+#### Erweiterung der Funktionen
 
 Nach dem Test wurden folgende Funktionen fertiggestellt:
 
-Fun-Facts-Bereich
-Suchfunktion
-Registrierung
-Login
-MongoDB Users Collection
-Konsistentes Design
+- Fun-Facts-Bereich
+- Suchfunktion
+- Registrierung
+- Login
+- MongoDB Users Collection
+
+#### Konsistentes Design
 
 Alle Seiten wurden auf ein einheitliches Layout umgestellt. Dadurch entstand ein konsistentes Erscheinungsbild über die gesamte Anwendung hinweg.
 
-Fazit der Evaluation
+#### Fazit der Evaluation
 
 Die Usability-Evaluation zeigte, dass die grundlegende Benutzerführung bereits funktionierte, jedoch noch Verbesserungspotenzial bestand. Durch die identifizierten Schwachstellen konnten gezielte Optimierungen vorgenommen werden.
 
