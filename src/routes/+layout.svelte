@@ -2,6 +2,8 @@
 	import favicon from "$lib/assets/favicon.svg";
 
 	let { data, children } = $props();
+
+	let menuOpen = $state(false);
 </script>
 
 <svelte:head>
@@ -19,17 +21,20 @@
 
 		{#if data.user}
 			<div class="dropdown">
-				<button class="dropbtn">Profil ▾</button>
-
-				<div class="dropdown-content">
-					<a href="/profil">Profil ansehen</a>
-					<a href="/forum">Forum</a>
-					<form method="POST" action="/logout">
-						<button type="submit" class="logout-btn">
-							Abmelden
-						</button>
-					</form>
-				</div>
+				<button class="dropbtn" onclick={() => (menuOpen = !menuOpen)}>
+					Profil ▼
+				</button>
+				{#if menuOpen}
+					<div class="dropdown-content">
+						<a href="/profil">Profil ansehen</a>
+						<a href="/forum">Forum</a>
+						<form method="POST" action="/logout">
+							<button type="submit" class="logout-btn">
+								Abmelden
+							</button>
+						</form>
+					</div>
+				{/if}
 			</div>
 		{:else}
 			<a href="/login">Login</a>
@@ -110,17 +115,20 @@
 	}
 
 	.dropdown-content {
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 28px;
-		background: rgba(0, 0, 0, 0.9);
-		min-width: 190px;
-		border-radius: 12px;
-		overflow: hidden;
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-		z-index: 1000;
-	}
+	position: absolute;
+	right: 0;
+	top: 35px;
+
+	background: rgba(0, 0, 0, 0.95);
+
+	min-width: 190px;
+
+	border-radius: 12px;
+
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+	z-index: 1000;
+}
 
 	.dropdown-content a,
 	.logout-btn {
@@ -143,7 +151,5 @@
 		text-decoration: none;
 	}
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
+	
 </style>
