@@ -103,9 +103,31 @@ Die wichtigsten Seiten waren bereits in den frühen Entwürfen vorgesehen:
 Die Skizzen bildeten die Grundlage für die anschliessende Umsetzung des Prototyps.
 
 ### 3.3 Decide
-- **Gewählte Variante & Begründung:** _[Entscheidkriterien nennen]_  
-- **End-to-End-Ablauf:** _[Beschreibung inkl. User Journey Map]_  
-- **Mockup:** _[URL, z. B. Figma; Screenshots mit kurzen Beschreibungen]_  
+Basierend auf den erstellten Skizzen wurde die finale Struktur der Anwendung festgelegt.
+
+Für die technische Umsetzung wurden folgende Technologien ausgewählt:
+
+| Technologie        | Begründung                                                     |
+| ------------------ | -------------------------------------------------------------- |
+| SvelteKit          | Moderne Webentwicklung, hohe Performance und einfache Struktur |
+| MongoDB Atlas      | Flexible Speicherung der Regeldaten                            |
+| MongoDB Compass    | Einfache Verwaltung der Datenbank                              |
+| GitHub             | Versionsverwaltung und Backup                                  |
+| Netlify            | Einfache Veröffentlichung der Anwendung                        |
+| Figma              | Erstellung von Wireframes und Layoutideen                      |
+| Visual Studio Code | Entwicklungsumgebung                                           |
+
+Für das Design wurde bewusst ein dunkles Erscheinungsbild mit Fussballstadion-Hintergrund gewählt. Dadurch entsteht ein direkter Bezug zum Thema Fussball und gleichzeitig ein modernes Erscheinungsbild.
+
+Zusätzlich wurde entschieden, die Inhalte nicht ausschliesslich über lange Texte darzustellen. Stattdessen werden Regeln in einzelne Karten aufgeteilt und über mehrere Ebenen strukturiert:
+
+1. Kategorienübersicht
+2. Auswahl einer Regel
+3. Detailansicht der Regel
+
+Dadurch wird die Informationsmenge pro Seite reduziert und die Benutzerführung vereinfacht.
+
+Neben den ursprünglich geplanten Funktionen wurde bereits früh entschieden, zusätzliche Features wie eine Suchfunktion, einen Fun-Facts-Bereich sowie Login und Registrierung zu integrieren, um den Mehrwert der Anwendung weiter zu erhöhen.
 
 ### 3.4 Prototype
 
