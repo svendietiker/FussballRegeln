@@ -36,13 +36,13 @@ Die entwickelte Webanwendung „FussballRegeln“ bietet eine zentrale Plattform
 
 Die Anwendung umfasst verschiedene Bereiche:
 
-  - **Startseite mit Einführung in das Thema
-  Kategorienübersicht der Fussballregeln
-  Detailseiten zu einzelnen Regeln
-  Suchfunktion für schnelles Finden von Regeln
-  Fun-Facts-Bereich mit historischen und nicht mehr gültigen Fussballregeln
-  Login- und Registrierungsfunktion
-  MongoDB-Datenbank zur Verwaltung der Inhalte
+  - Startseite mit Einführung in das Thema
+  - Kategorienübersicht der Fussballregeln
+  - Detailseiten zu einzelnen Regeln
+  - Suchfunktion für schnelles Finden von Regeln
+  - Fun-Facts-Bereich mit historischen und nicht mehr gültigen Fussballregeln
+  - Login- und Registrierungsfunktion
+  - MongoDB-Datenbank zur Verwaltung der Inhalte
 
 Besonderer Wert wurde auf eine übersichtliche Navigation, ein modernes Design und eine einfache Bedienung gelegt. Durch die Kombination aus kurzen Erklärungen, Beispielen und Bildern sollen auch komplexere Regeln leicht verständlich vermittelt werden.
 
