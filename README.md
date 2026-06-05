@@ -359,7 +359,7 @@ Die generierten Vorschläge wurden jeweils überprüft, angepasst und in die bes
 
 #### Eigene Leistung (Abgrenzung)
 
-Die Projektidee, die Anforderungen, die Struktur der Anwendung, die Gestaltung der Benutzeroberfläche, die Datenmodellierung, die Durchführung der Evaluation sowie die Auswahl und Integration der Funktionen wurden eigenständig erarbeitet. KI wurde als Unterstützung verwendet, die Verantwortung für die Umsetzung und Qualität lag jederzeit beim Autor.
+Die Projektidee, die Anforderungen, die Struktur der Anwendung, die Gestaltung der Benutzeroberfläche, die Datenmodellierung, die Durchführung der Evaluation sowie die Auswahl und Integration der Funktionen wurden eigenständig erarbeitet. KI wurde als Unterstützung verwendet, die Verantwortung für die Umsetzung und Qualität lag jederzeit bei mir selber.
 
 ### 6.2 Prompt-Vorgehen
 Beim Einsatz von KI wurden konkrete Fragestellungen formuliert. Die Prompts enthielten jeweils Informationen über den aktuellen Entwicklungsstand, die verwendeten Technologien sowie die gewünschte Funktionalität.
