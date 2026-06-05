@@ -36,7 +36,7 @@ Die entwickelte Webanwendung „FussballRegeln“ bietet eine zentrale Plattform
 
 Die Anwendung umfasst verschiedene Bereiche:
 
-  Startseite mit Einführung in das Thema
+  - **Startseite mit Einführung in das Thema
   Kategorienübersicht der Fussballregeln
   Detailseiten zu einzelnen Regeln
   Suchfunktion für schnelles Finden von Regeln
