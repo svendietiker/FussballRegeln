@@ -317,24 +317,61 @@ Kapitel 3.4.1 Entwurf (Design)
 Ja. Die Testpersonen empfanden das ursprüngliche Design als zu schlicht.
 
 ## 5. Projektorganisation [Optional]
-Beispiele:
-- **Repository & Struktur:** _[Link; kurze Strukturübersicht]_  
-- **Issue-Management:** _[Vorgehen kurz beschreiben]_  
-- **Commit-Praxis:** _[z. B. sprechende Commits]_
+### Repository & Struktur
+
+Das Projekt wurde in einem GitHub-Repository verwaltet. Die Anwendung basiert auf SvelteKit und folgt einer komponentenorientierten Struktur. Die Seiten wurden über das Routing-System von SvelteKit organisiert.
+
+Wichtige Bereiche:
+
+- src/routes → Seiten und Navigation
+- src/lib → Wiederverwendbare Funktionen
+- MongoDB → Speicherung der Daten
+- Netlify → Deployment der Anwendung
+### Issue-Management
+
+Das Projekt wurde als Einzelarbeit umgesetzt. Kleinere Probleme und offene Aufgaben wurden während der Entwicklung laufend dokumentiert und priorisiert. Der Fokus lag dabei auf einer iterativen Weiterentwicklung des Prototyps.
+
+### Commit-Praxis
+
+Während der Entwicklung wurden regelmässig Commits erstellt, um Fortschritte nachvollziehbar zu dokumentieren und Zwischenstände zu sichern. Die Commit-Nachrichten wurden möglichst sprechend formuliert und orientierten sich an den jeweils umgesetzten Funktionen.
 
 ## 6. KI-Deklaration
 Die folgende Deklaration ist verpflichtend und beschreibt den Einsatz von KI im Projekt.
 
 ### 6.1 KI-Tools
-- **Eingesetzte Tools**: _[z. B. Copilot, ChatGPT, Claude, lokale Modelle; Version/Variante wenn bekannt]_
-- **Zweck & Umfang**: _[wie, wofür und in welchem Ausmass wurde KI eingesetzt (z. B. Textentwürfe, Codevorschläge, Tests, Refactoring); welche Teile stammen (ganz/teilweise) aus KI-Unterstützung?]_
-- **Eigene Leistung (Abgrenzung):** _[was ist eigenständig erarbeitet/überarbeitet worden?]_
+#### Eingesetzte Tools
+- ChatGPT (OpenAI)
+- GitHub Copilot (teilweise)
+- VS Code KI-Unterstützung
+#### Zweck & Umfang
+
+KI wurde während des Projekts unterstützend eingesetzt. Die Hauptanwendungsbereiche waren:
+
+- Unterstützung bei der Entwicklung mit SvelteKit
+- Fehlersuche und Debugging
+- Erstellung von Datenbankabfragen
+- Entwicklung von Login- und Registrierungsfunktionen
+- Gestaltung von Benutzeroberflächen
+- Formulierung und Überarbeitung von Dokumentationstexten
+- Generierung von Beispielinhalten für Fussballregeln und Fun Facts
+
+Die generierten Vorschläge wurden jeweils überprüft, angepasst und in die bestehende Anwendung integriert.
+
+#### Eigene Leistung (Abgrenzung)
+
+Die Projektidee, die Anforderungen, die Struktur der Anwendung, die Gestaltung der Benutzeroberfläche, die Datenmodellierung, die Durchführung der Evaluation sowie die Auswahl und Integration der Funktionen wurden eigenständig erarbeitet. KI wurde als Unterstützung verwendet, die Verantwortung für die Umsetzung und Qualität lag jederzeit beim Autor.
 
 ### 6.2 Prompt-Vorgehen
-_[Überlegungen zu Prompt-Vorgehen, Qualität und Urheberrecht/Quellen. Wie wurde beim Prompting vorgegangen? Zu beschreiben ist die grundlegende Vorgehensweise. Einzelne, konkrete Prompts sollten höchstens als Beispiele aufgeführt werden. ]_
+Beim Einsatz von KI wurden konkrete Fragestellungen formuliert. Die Prompts enthielten jeweils Informationen über den aktuellen Entwicklungsstand, die verwendeten Technologien sowie die gewünschte Funktionalität.
+
+Die generierten Antworten wurden nicht unverändert übernommen. Stattdessen wurden verschiedene Lösungsansätze verglichen, getestet und bei Bedarf angepasst. Besonders bei technischen Problemen wurden mehrere Iterationen durchgeführt, bis eine funktionierende Lösung gefunden wurde.
+
+Zusätzlich wurde darauf geachtet, keine urheberrechtlich geschützten Inhalte ungeprüft zu übernehmen.
 
 ### 6.3 Reflexion
-_[Nutzen, Grenzen, Risiken/Qualitätssicherung, ...]_
+Der Einsatz von KI ermöglichte eine schnellere Entwicklung und erleichterte insbesondere die Fehlersuche sowie die technische Umsetzung einzelner Funktionen. Gleichzeitig zeigte sich, dass generierte Lösungen nicht immer direkt funktionieren und kritisch überprüft werden müssen.
+
+Besonders bei der Integration von MongoDB, der Konfiguration des Deployments sowie der Umsetzung dynamischer Routen waren eigene Analysen und Anpassungen notwendig. KI erwies sich als hilfreiches Werkzeug, konnte jedoch die eigenständige Problemlösung und das Verständnis der Technologien nicht ersetzen.
 
 ## 7. Anhang [Optional]
 Beispiele:
