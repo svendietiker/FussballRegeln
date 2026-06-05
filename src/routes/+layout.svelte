@@ -115,20 +115,21 @@
 	}
 
 	.dropdown-content {
-	position: absolute;
-	right: 0;
-	top: 35px;
+		position: absolute;
+		right: 0;
+		top: 35px;
 
-	background: rgba(0, 0, 0, 0.95);
+		background: rgba(0, 0, 0, 0.95);
 
-	min-width: 190px;
+		min-width: 190px;
 
-	border-radius: 12px;
+		border-radius: 12px;
+		overflow: hidden;
 
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 
-	z-index: 1000;
-}
+		z-index: 1000;
+	}
 
 	.dropdown-content a,
 	.logout-btn {
@@ -152,4 +153,5 @@
 	}
 
 	
+
 </style>
