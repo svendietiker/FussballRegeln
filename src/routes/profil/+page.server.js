@@ -1,5 +1,6 @@
 import { connectToDatabase } from '$lib/server/db';
 import { redirect } from '@sveltejs/kit';
+import { ObjectId } from 'mongodb';
 
 export async function load({ cookies }) {
 	const userId = cookies.get('user');
@@ -11,7 +12,7 @@ export async function load({ cookies }) {
 	const db = await connectToDatabase();
 
 	const user = await db.collection('users').findOne({
-		_id: userId
+		_id: new ObjectId(userId)
 	});
 
 	return {
