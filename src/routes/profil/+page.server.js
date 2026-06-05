@@ -16,6 +16,10 @@ export async function load({ cookies }) {
 	});
 
 	return {
-		email: user?.email ?? 'Unbekannt'
-	};
+	user: {
+		email: user?.email ?? 'Unbekannt',
+		displayName: user?.displayName ?? 'Noch kein Anzeigename',
+		favoritePosition: user?.favoritePosition ?? 'Noch keine Lieblingsposition'
+	}
+};
 }

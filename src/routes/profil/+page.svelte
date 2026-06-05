@@ -4,30 +4,26 @@
 
 <section class="profile-page">
 	<div class="profile-card">
-
 		<div class="profile-header">
-			<div class="avatar">
-				👤
-			</div>
+			<div class="avatar">👤</div>
 
 			<div>
 				<h1>Mein Profil</h1>
-				<p>{data.email}</p>
+				<h2>{data.user.displayName}</h2>
+				<p>{data.user.email}</p>
+				<p class="position">
+					Lieblingsposition: {data.user.favoritePosition}
+				</p>
 			</div>
 		</div>
 
 		<div class="button-row">
-
-			<a href="/" class="home-btn">
-				← Zurück zur Homepage
-			</a>
+			<a href="/" class="home-btn"> ← Zurück zur Homepage </a>
 
 			<a href="/profil-bearbeiten" class="edit-btn">
 				Profil bearbeiten
 			</a>
-
 		</div>
-
 	</div>
 </section>
 
@@ -36,12 +32,8 @@
 		min-height: 100vh;
 		padding: 140px 60px 60px;
 
-		background:
-			linear-gradient(
-				rgba(0,0,0,0.75),
-				rgba(0,0,0,0.75)
-			),
-			url('/img/hintergrundhome.png');
+		background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+			url("/img/hintergrundhome.png");
 
 		background-size: cover;
 		background-position: center;
@@ -53,7 +45,7 @@
 	.profile-card {
 		max-width: 900px;
 
-		background: rgba(0,0,0,0.45);
+		background: rgba(0, 0, 0, 0.45);
 
 		backdrop-filter: blur(10px);
 
@@ -61,9 +53,9 @@
 
 		border-radius: 20px;
 
-		border: 1px solid rgba(255,255,255,0.1);
+		border: 1px solid rgba(255, 255, 255, 0.1);
 
-		box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	}
 
 	.profile-header {
@@ -78,7 +70,7 @@
 
 		border-radius: 50%;
 
-		background: rgba(255,255,255,0.1);
+		background: rgba(255, 255, 255, 0.1);
 
 		display: flex;
 		align-items: center;
@@ -92,8 +84,18 @@
 		font-size: 42px;
 	}
 
+	h2 {
+	margin: 8px 0 4px;
+	font-size: 24px;
+	color: #39d353;
+}
+
+.position {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 17px;
+}
 	p {
-		color: rgba(255,255,255,0.8);
+		color: rgba(255, 255, 255, 0.8);
 		font-size: 18px;
 	}
 
