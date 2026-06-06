@@ -374,8 +374,6 @@ Der Einsatz von KI ermöglichte eine schnellere Entwicklung und erleichterte ins
 Besonders bei der Integration von MongoDB, der Konfiguration des Deployments sowie der Umsetzung dynamischer Routen waren eigene Analysen und Anpassungen notwendig. KI erwies sich als hilfreiches Werkzeug, konnte jedoch die eigenständige Problemlösung und das Verständnis der Technologien nicht ersetzen.
 
 ## 7. Anhang [Optional]
-Beispiele:
-- **Quellen:** _[verwendete Vorlagen/Assets/Modelle; Lizenz/Urheberrecht; ...]_
-- **Testskript & Materialien:** _[Link/Datei]_  
-- **Rohdaten/Auswertung:** _[Link/Datei]_  
+### Figma-Bild
+[Figma Übung 10](<../Übung 10.pdf>)
 
